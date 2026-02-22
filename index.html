@@ -2,19 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Netflix Clone</title>
+  <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: rgba(33, 30, 30, 0.7);"class="bg">
+<body style="background-image: #0000;">
   <nav>
-    <div class="logo">Netflix</div>
+    <div class="logo">Netflix Admin</div>
     <div class="nav-right">
-      <a href="login.html" class="btn">login</a>
+      <a href="index.html" class="btn">Home</a>
+    </div>
   </nav>
-  <div class="center">
-    <h1>Welcome to Netflix</h1>
-    <h6>Stream your favorite movies and shows anytime, anywhere.</h6>
-    <a href="login.html" class="btn">Get Started</a>
-  </div>
+  <h2 style="align-items: center;">Admin Panel</h2>
+  <form id="addMovieForm">
+    <input type="text" id="movieTitle" placeholder="Movie Title" required>
+    <input type="text" id="moviePoster" placeholder="Poster URL" required>
+    <button  type="submit" class="btn">Add Movie</button>
+  </form>
+
+  <h3>Movies</h3>
+  <div id="adminMovieList"></div>
+
+  <h3>Users</h3>
+  <div id="userList"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
