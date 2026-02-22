@@ -1,0 +1,174 @@
+body.bg {
+  font-family: Arial, sans-serif;
+  background: url('https://img.etimg.com/thumb/msid-123394089,width-300,height-225,imgsize-81625,resizemode-75/.jpg');
+ background-size: cover;
+ background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 15;
+  color:rgb(236, 238, 242);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+  
+}
+.bg {
+  background-color:rgba(18, 17, 17, 0.7);;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(231, 14, 14);
+
+}
+
+.nav-right .btn {
+  background: rgb(206, 19, 19);
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 10%;
+  color: aliceblue;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+
+.btn {
+  background: red;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Buttons hover */
+.btn:hover {
+  background: #e50914; /* Netflix red */
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Movie posters hover */
+#movieList img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#movieList img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/* Admin movie list hover */
+#adminMovieList img {
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+#adminMovieList img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+.movie-card {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+  color: white;
+}
+
+.movie-card img {
+  width: 150px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255,0,0,0.7);
+}
+
+.movie-card h4 {
+  margin: 8px 0;
+}
+
+.movie-card .btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.movie-card .btn:hover {
+  background: #e50914;
+  transform: scale(1.05);
+}}
+/* Movies grid */
+#movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Movie card */
+.movie-card {
+  background: rgba(10, 9, 9, 0.6);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255,0,0,0.7);
+}
+
+.movie-card h4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.movie-card .btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.movie-card .btn:hover {
+  background: #e50914;
+  transform: scale(1.05);
+}
